@@ -29,14 +29,6 @@
     
 };
 
-&colubris_layout {
-    transform = <&default_transform>;
-    kscan = <&mock_kscan>;
-};
-
-/delete-node/ &kscan0;   // only required if the dongle uses a 
-//                                 // different board than the peripherals
-//                                 // Since we do that, we have to delete the node.
 
 &xiao_i2c {
     status = "okay";
