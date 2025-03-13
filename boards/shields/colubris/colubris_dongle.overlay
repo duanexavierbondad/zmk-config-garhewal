@@ -1,9 +1,9 @@
-#include "colubris.dtsi"
+#include <dt-bindings/zmk/matrix_transform.h>
 
 / {
     chosen {
-        zmk,physical-layout = &colubris_layout;
-        //zephyr,display = &oled;
+        zmk,physical-layout = &mock_kscan;
+        zephyr,display = &oled;
     };
 
     mock_kscan: mock_kscan0 {
